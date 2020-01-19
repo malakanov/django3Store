@@ -119,13 +119,13 @@ from django.utils.translation import gettext_lazy as _
 
 LANGUAGES = (
     ('en', _('English')),
-    ('es', _('Spanish')),
+    ('ru', _('Russian')),
 )
 
 PARLER_LANGUAGES = {
     None: (
         {'code': 'en'},
-        {'code': 'es'},
+        {'code': 'ru'},
     ),
     'default': {
         'fallback': 'en',
@@ -175,6 +175,8 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
 
-REDIS_HOST = 'localhost'
+REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 REDIS_DB = 1
+
+
